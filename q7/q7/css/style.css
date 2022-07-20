@@ -1,1 +1,39 @@
 @charset "UTF-8";
+.balloon{
+  width: 500px;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 16px;
+  background: #fad296;
+  border: solid 5px #8f5a0a;
+  border-radius: 30px;
+  margin: 0 auto;
+  position: relative;
+}
+
+p{
+  padding: 20px;
+}
+
+/* 三角の出っ張り部分 */
+.balloon::before{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  transform: translateX(-50%);
+  border: solid 20px transparent;
+  border-top: solid 20px #fad296;
+  z-index: 2;
+}
+
+.balloon::after{
+  content: "";
+  position: absolute;
+  top: 101%;
+  left: 10%;
+  transform: translateX(-50%);
+  border: solid 25px transparent;
+  border-top: solid 25px #8f5a0a;
+  z-index: 1;
+}
