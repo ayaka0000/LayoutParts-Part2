@@ -1,2 +1,21 @@
 @charset "UTF-8";
 
+.Q8-1{
+  height: 500px;
+  background: url(../../image/coffee-background.jpg);
+}
+
+.Q8-2{
+  height: 500px;
+  background: url(../../image/coffee-background.jpg) no-repeat;
+}
+
+.Q8-3{
+  height: 500px;
+  background: url(../../image/coffee-background.jpg) no-repeat center/cover;
+}
+
+.Q8-4{
+  height: 500px;
+  background: url(../../image/coffee-background.jpg) no-repeat center/contain;
+}
